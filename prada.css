@@ -1,0 +1,417 @@
+body{ width:100%;
+margin: 0px;
+padding: 0px;
+}
+*/{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*------------------------------Page----------------------*/
+.khung{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+}
+.khung .hinhnen{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-size: cover;
+    animation: hinh 60s infinite;
+}
+@keyframes hinh{
+    0%{background: url(Anh2.jpg); transform:  scale(1);background-repeat: no-repeat;background-size: cover;}
+    15%{background: url(Anh2.jpg); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}
+    16%{background: url(a1.webp); transform:  scale(1); background-repeat: no-repeat;background-size: cover;}
+    30%{background: url(a1.webp); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}
+    31%{background: url(Anh_3.webp); transform:  scale(1);background-repeat: no-repeat; background-size: cover;}
+    45%{background: url(Anh_3.webp); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}
+    46%{background: url(Anh_6.webp); transform:  scale(1);background-repeat: no-repeat;background-size: cover;}
+    60%{background: url(Anh_6.webp); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}
+    61%{background: url(Anh9.webp); transform:  scale(1);background-repeat: no-repeat;background-size: cover;}
+    75%{background: url(Anh9.webp); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}
+    76%{background: url(anh19.jpg); transform:  scale(1);background-repeat: no-repeat;background-size: cover;}
+    88%{background: url(anh19.jpg); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}
+    89%{background: url(Anh29.webp); transform:  scale(1);background-repeat: no-repeat;background-size: cover;}
+    100%{background: url(Anh29.webp); transform:  scale(1.1);background-repeat: no-repeat;background-size: cover;}   
+}
+.khoi1{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    color: white;
+    
+}
+.khoi1 .layer1{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    font-size: bold;
+    padding-top: 300px;
+    font-size: 30px;
+    
+}
+.khoi1 .layer3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:2;
+    opacity: 0;
+    transition: 0.5s;
+    margin-left:0px;
+}
+.khoi1:hover .layer3{
+    opacity: 0.6;
+}
+.khoi1 .layer2{
+    position: absolute;
+    z-index: 3;
+    margin-top: 330px;
+    margin-left: 26%;
+    margin-right: 20%;
+    padding: 6px 12px;
+    opacity: 0;
+    background-color: rgb(113, 155, 145);
+    border-radius: 50px;
+    transition: 0.5s;
+    color: white;
+}
+.khoi1:hover .layer2{
+    opacity: 0.9;
+    margin-top: 350px;
+}
+.khoi1 .icon{
+    position: absolute;
+    z-index: 3;
+    bottom: -80px;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    width: 100%;
+}
+.khoi1:hover .icon{
+    bottom: 80px;
+    opacity: 1;
+}
+.khoi1 .ic{
+    font-size: 30px;
+
+}
+.khoi1 .ic2{
+    color: rgb(108, 155, 146);
+}
+.s2{
+    margin-left: 20%;
+}
+.s3{
+    margin-left: 40%;
+}
+.s4{
+    margin-left: 60%;
+}
+.s5{
+    margin-left: 80%;
+}
+.s3 .layer2{
+    margin-left: 33%;
+}
+.s4 .layer2{
+    margin-left: 35%;
+}
+.s5 .layer2{
+    margin-left: 15%;
+}
+/*----------------------Slide----------------*/
+.container{
+    margin-top: 30px;
+}
+.sld .mySlides {
+    width: 100% ;
+    margin-left: 160px;
+    height: 500px;
+}
+.center .section{
+    width: 100% ;
+    margin-left: 670px;
+    padding-top: 36px;
+    
+}
+
+/*----------------------Sản phẩm ----------------*/
+a.taokhoi{
+    width: 350px;
+    height: 600px;
+    background-color: black;
+    /* display: block; */
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+a.taokhoi .lop1{
+    width: 50%;
+    height: 600px;
+    margin-left: -15px;
+}
+a.taokhoi .lop1:hover{
+    padding-left: 10px;
+    transition: 0.5s;
+    opacity: 0.1; 
+    background-color: cornflowerblue;
+}
+a.taokhoi .lop2{
+    position: absolute;
+    bottom: -270px;
+    left: 5px;
+    z-index: 2;
+    padding:  8px 10px;
+    transform: 0.9;
+    text-shadow: black;
+    color: black;
+    text-size-adjust: 15px;
+    border-radius: 10px;
+    background-size: 15px;
+    background:white;
+}
+a.taokhoi .lop2:hover{
+    padding-left: 10px;
+    transition: 0.5s;
+    color: rgb(224, 212, 212);
+    background-color: black;
+}
+a.taokhoi .lop3{
+    position: absolute;
+    bottom: -270px;
+    left: 5px;
+    z-index: 2;
+    padding:  8px 10px;
+    transform: 0.9;
+    text-align: center;
+    text-shadow: black;
+    color: black;
+    text-size-adjust: 15px;
+    border-radius: 10px;
+    background-size: cover;
+    background:white;
+}
+a.taokhoi .lop3:hover{
+    padding-left: 10px;
+    transition: 0.5s;
+    color: rgb(224, 212, 212);
+    background-color: black;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #161616;
+    width: 150px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+    transform: translateX(-50); 
+}
+.title:hover{
+    color: black;
+    
+}
+
+/*----------------------------------Store-------------------*/
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #161616;
+    width: 150px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+    transform: translateX(-50); 
+}
+h1{
+    text-align: center;
+    color: rgb(136, 136, 132);
+    padding-bottom:30px;
+}
+.le{
+    width: 100px;
+}
+.mau{
+    color: brown;
+    font-size: 15px;
+}
+.cot{
+    left: 100px;
+}
+.le{
+    left: 100px;
+    right: 100px;
+    
+}
+#gop{
+    text-align: center;
+}
+.a1{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(1.jpg); */
+    top: 0;
+    left: 0;
+   
+}
+.ss{
+    overflow: hidden;
+}
+.s1{
+    position: relative;
+}
+.chu{
+    width: 100%;
+    text-align: center;
+    top: 47%;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 30px;
+}
+.chu:hover{
+    color: brown;
+}
+.nen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:3;
+    opacity: 0;
+    transition: 0.5s;
+    margin-left:0px;
+}
+.s1:hover .nen{
+    opacity: 0.5;
+}
+/*----------------footer-----------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 50px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px ;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 10px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+/*---------------media query for menu--------------*/
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*--media query for less than 600 screen size--*/
+@media only screen and (max-width: 800px){
+    row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
